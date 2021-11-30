@@ -1,4 +1,5 @@
 name: Python Delivery
+
 on:
   push:
     tags:
@@ -117,4 +118,5 @@ jobs:
         upload_url: ${{ steps.create-new-release.outputs.upload_url }}
         asset_path: ./content.zip
         asset_name: ${{ env.RELEASE_VERSION }}.zip
-        asset_content_type: application/zip
+        asset_content_type: application/zip   
+        
